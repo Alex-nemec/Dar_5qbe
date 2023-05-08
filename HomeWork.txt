@@ -1,0 +1,83 @@
+public class Main {
+    public static void main(String[] args) {
+
+        //1
+        String flowersName = "Roses";
+
+        //2
+        byte flowersNumber = 101;
+
+        System.out.println("3-е условие ДЗ - " + flowersName + ' ' + flowersNumber);
+
+        //4
+        byte a = 15, b = 10;
+        System.out.println("4-е условие ДЗ - " + (a+b));
+
+        //5
+        int c; //Почему не принимает переменную byte? Результат входит в допустимый диапозон.
+        c = (a + b);
+        System.out.println("5-е условие ДЗ - " + c);
+
+        //6
+        double x = 15.37, y = 26.15, z = 593.26;
+        System.out.println("6-е условие ДЗ - " + (x + y + z));
+
+        //7
+        short q, w, e, r;
+        q = w = e = r = 500;
+        System.out.println("7-е условие ДЗ - " + (q + w + e + r));
+
+
+/*
+Объявите переменную типа double, но не инициализируйте ее. Присвойте ей значение позже.
+Перезапишите существующее значение переменной.
+Создайте константы со значениями числа PI, ускорения свободного падения, наименования родного города.
+ */
+        double newType;
+        newType = 458.5468;
+
+        System.out.println(newType);
+
+        newType = 15e4d;
+        System.out.println(newType);
+
+        final double Pi = 3.1415926535, g = 9.80665;
+        final String Sity = "Kokshetau";
+
+        /*Создайте переменные типа byte, short, int, long, double, float, boolean, char, String,
+         и выведите каждое значение в консоль.
+        */
+        byte b1 = -120;
+        short sh1 = 32000;
+        int i1 = 10_000_000;
+        long l1 = - 20000L;
+        double d1 = 15e7d;
+        float f1 = 5e4f;
+        boolean b01 = true, b02 = false;
+        char cr1 = 167, cr2 = 188;
+        String st1 = "Закончили!!!";
+
+        System.out.println("byte " + b1);
+        System.out.println("short " + sh1);
+        System.out.println("int " + i1);
+        System.out.println("long " + l1);
+        System.out.println("double " + d1);
+        System.out.println("float " + f1);
+        System.out.println("boolean " + b01);
+        System.out.println("boolean " + b02);
+        System.out.println("char " + cr1);
+        System.out.println("char " + cr2);
+        System.out.println("String " + st1);
+	
+/* Примеры с расширяющим с сужающим приведеним типов.
+        */
+
+  	int i2 = 30;
+        byte i3 = (byte) i2 ;
+        i2 = i3 / 10;
+        System.out.println("Сужающее приведение с int в byte " + i2);
+        int i4 = i2*100000;
+        System.out.println("Расширяющее приведение с byte в int " + i4);
+
+	}
+}
